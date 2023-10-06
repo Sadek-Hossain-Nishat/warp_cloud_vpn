@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="funny_colors">
+        <item>#33000000</item>
+<!--        <item>#00000000</item>-->
+        <item>#FF5722</item>
+        <item>#FF6F00</item>
+        <item>#F44336</item>
+<!--        <item>#CCFFFFFF</item>-->
+
+
+    </array>
+
+    <array name="trackcolor">
+        <item>#ffffff</item>
+        <item>@color/colorPrimary</item>
+    </array>
+</resources>

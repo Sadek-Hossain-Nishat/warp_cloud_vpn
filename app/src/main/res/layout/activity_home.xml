@@ -1,0 +1,217 @@
+<!-- activity_home.xml -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity"
+    >
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="13dp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.1.1.1"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:textColor="@color/black"
+                android:scaleY="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="by cloudflare"
+                android:textStyle="bold"
+                android:textSize="15sp"
+
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+
+
+
+            android:gravity="center"
+
+
+
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/questionmarkicon"
+                android:layout_marginRight="25dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_hamgurger"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+
+        android:layout_below="@id/header">
+
+
+        <com.mursaat.extendedtextview.AnimatedGradientTextView
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:simultaneousColors="5"
+            app:angle="45"
+            app:speed="1000"
+            app:maxFPS="10"
+            android:layout_gravity="center_horizontal"
+            android:text="WARP"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:scaleX="7"
+            android:scaleY="5"
+
+            />
+
+<!--        <androidx.appcompat.widget.SwitchCompat-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/App.Switches"-->
+
+
+
+
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="70dp"-->
+<!--            android:id="@+id/switch_button"-->
+<!--            />-->
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            app:trackTint="@color/trackcolor"
+            android:id="@+id/materialswitch"
+
+
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Disconnected"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Your Internet is not private"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+
+
+
+                    android:textSize="18sp"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+
+
+                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+                android:background="@drawable/rounded_corner"
+                android:elevation="10dp"
+                android:id="@+id/bottom_sheet">
+
+                <ImageView
+                    android:id="@+id/btn_img_slidebottomsheet"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_uparrow"
+                    android:layout_gravity="center_horizontal" />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/bottomsheet_content">
+
+                    <include   android:id="@+id/collaspeview"  layout="@layout/bottomsheet_collapsestate_content" />
+                    <include android:visibility="gone" android:id="@+id/expandedview" layout="@layout/bottom_sheet_expandedstate_content"/>
+
+
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>

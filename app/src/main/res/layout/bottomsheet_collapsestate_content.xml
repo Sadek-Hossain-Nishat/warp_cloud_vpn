@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/collapsestate"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/collapse_state_title1"
+        android:textColor="@color/materialBlue"
+        android:layout_centerInParent="true"
+
+        android:textSize="40sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_1"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textFontWeight="800"
+        android:text="for an even better internet"/>
+
+</RelativeLayout>

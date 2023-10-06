@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WarpOpenVpnApp</string>
+    <string name="bottomsheet_expandedtext_title">
+
+        <b>Warp+</b> sends your requests over carefully chosen routes designned to avoid Internet traffic jams
+    </string>
+
+    <string name="bottomsheet_expandedtext_bodytext">
+        It is a complete free vpn app for all users. please share this app to your friend and enjoy
+    </string>
+
+    <string name="collapse_state_title1">
+        <b>
+            WARP+
+        </b>
+
+
+    </string>
+
+    <string name="zerobuttontext">
+       <b>Switch to 0.0.0.0</b>
+    </string>
+
+
+</resources>
